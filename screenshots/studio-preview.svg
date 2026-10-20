@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" style="background:#0b0f19; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;">
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="1000" height="50" fill="#111827" stroke="#2d3748" stroke-width="1"/>
+  <text x="25" y="32" fill="#60a5fa" font-size="16" font-weight="bold">🚩 FeatureFlag Pro</text>
+  <rect x="180" y="16" width="50" height="20" rx="10" fill="#3b82f6" fill-opacity="0.2"/>
+  <text x="190" y="30" fill="#60a5fa" font-size="10" font-weight="bold">v1.0.0</text>
+  
+  <rect x="240" y="16" width="105" height="20" rx="10" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.3"/>
+  <text x="252" y="30" fill="#34d399" font-size="10" font-weight="bold">ZERO-LATENCY</text>
+
+  <!-- Preset Selector -->
+  <rect x="630" y="14" width="250" height="24" rx="4" fill="#0d131f" stroke="#2d3748" stroke-width="1"/>
+  <text x="640" y="30" fill="#9ca3af" font-size="11">SaaS Checkout v2 (25% Canary)</text>
+  <rect x="895" y="14" width="80" height="24" rx="4" fill="#2563eb"/>
+  <text x="912" y="30" fill="#ffffff" font-size="11" font-weight="bold">Print PDF</text>
+
+  <!-- Left Column: Flag Configuration -->
+  <rect x="20" y="65" width="460" height="515" rx="8" fill="#111827" stroke="#2d3748" stroke-width="1"/>
+  <rect x="20" y="65" width="460" height="40" rx="8" fill="#1f2937" fill-opacity="0.4"/>
+  <text x="35" y="90" fill="#f3f4f6" font-size="13" font-weight="bold">⚙️ Feature Flag Configuration</text>
+
+  <!-- Flag Key Input -->
+  <text x="35" y="130" fill="#9ca3af" font-size="11" font-weight="bold">Flag Key / Identifier:</text>
+  <rect x="35" y="140" width="430" height="30" rx="4" fill="#0d131f" stroke="#2d3748" stroke-width="1"/>
+  <text x="45" y="160" fill="#f3f4f6" font-size="12" font-family="monospace">new-checkout-v2</text>
+
+  <!-- Rollout Slider Box -->
+  <rect x="35" y="185" width="430" height="95" rx="6" fill="#161e2e" stroke="#2d3748" stroke-width="1"/>
+  <text x="45" y="210" fill="#9ca3af" font-size="11" font-weight="bold">Target Allocation Percentage:</text>
+  <text x="415" y="210" fill="#10b981" font-size="14" font-weight="bold" font-family="monospace">25%</text>
+  
+  <rect x="45" y="225" width="410" height="6" rx="3" fill="#374151"/>
+  <rect x="45" y="225" width="102" height="6" rx="3" fill="#3b82f6"/>
+  
+  <rect x="45" y="245" width="102" height="20" rx="4" fill="#10b981"/>
+  <text x="65" y="259" fill="#ffffff" font-size="9" font-weight="bold">25% Active</text>
+  <rect x="147" y="245" width="308" height="20" rx="4" fill="#1f2937"/>
+  <text x="260" y="259" fill="#9ca3af" font-size="9" font-weight="bold">74% Legacy Control</text>
+
+  <!-- Targeting Rules List -->
+  <text x="35" y="305" fill="#9ca3af" font-size="11" font-weight="bold">User Targeting Rules (Priority Order):</text>
+  
+  <!-- Rule 1 -->
+  <rect x="35" y="320" width="430" height="65" rx="6" fill="#161e2e" stroke="#2d3748" stroke-width="1"/>
+  <rect x="35" y="320" width="4" height="65" rx="2" fill="#3b82f6"/>
+  <text x="50" y="340" fill="#f3f4f6" font-size="11" font-weight="bold">Rule #1: VIP Customer Bypass</text>
+  <rect x="370" y="327" width="85" height="18" rx="3" fill="#3b82f6" fill-opacity="0.2"/>
+  <text x="382" y="340" fill="#60a5fa" font-size="9" font-weight="bold">force_true</text>
+  <text x="50" y="365" fill="#60a5fa" font-size="10" font-family="monospace">IF tier equals "vip" ➔ 100% Enabled</text>
+
+  <!-- Rule 2 -->
+  <rect x="35" y="395" width="430" height="65" rx="6" fill="#161e2e" stroke="#2d3748" stroke-width="1"/>
+  <rect x="35" y="395" width="4" height="65" rx="2" fill="#3b82f6"/>
+  <text x="50" y="415" fill="#f3f4f6" font-size="11" font-weight="bold">Rule #2: Geo Canary Allocation</text>
+  <rect x="370" y="402" width="85" height="18" rx="3" fill="#10b981" fill-opacity="0.2"/>
+  <text x="382" y="415" fill="#34d399" font-size="9" font-weight="bold">50% Rollout</text>
+  <text x="50" y="440" fill="#60a5fa" font-size="10" font-family="monospace">IF country in_list "AE,GB,US" ➔ 50% Rollout</text>
+
+  <!-- Right Column: Interactive Simulators -->
+  <rect x="500" y="65" width="480" height="515" rx="8" fill="#111827" stroke="#2d3748" stroke-width="1"/>
+  
+  <!-- Tabs Bar -->
+  <rect x="500" y="65" width="480" height="40" rx="8" fill="#1f2937" fill-opacity="0.5"/>
+  <text x="525" y="90" fill="#60a5fa" font-size="12" font-weight="bold">👤 User Test Sandbox</text>
+  <line x1="520" y1="104" x2="660" y2="104" stroke="#3b82f6" stroke-width="2"/>
+  <text x="690" y="90" fill="#9ca3af" font-size="12">📊 1,000-User Sim</text>
+  <text x="830" y="90" fill="#9ca3af" font-size="12">💻 Zero-Latency SDKs</text>
+
+  <!-- Single User Sandbox Result -->
+  <rect x="515" y="120" width="450" height="135" rx="8" fill="#161e2e" stroke="#2d3748" stroke-width="1"/>
+  <circle cx="565" cy="187" r="32" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-width="3"/>
+  <text x="565" y="185" text-anchor="middle" fill="#34d399" font-size="10" font-weight="bold">STATUS</text>
+  <text x="565" y="200" text-anchor="middle" fill="#34d399" font-size="13" font-weight="bold">ACTIVE</text>
+
+  <text x="615" y="155" fill="#f3f4f6" font-size="12" font-weight="bold">Resolved Context (usr_dubai_8819):</text>
+  <text x="615" y="180" fill="#9ca3af" font-size="11">Hash Bucket: <tspan fill="#60a5fa" font-family="monospace">14 / 99</tspan> • Variant: <tspan fill="#34d399" font-family="monospace">true</tspan></text>
+  <text x="615" y="205" fill="#34d399" font-size="11" font-weight="500">Reason: RULE_MATCHED: VIP Customer Bypass</text>
+  <text x="615" y="225" fill="#6b7280" font-size="10">Deterministic evaluation completed in 0.04ms</text>
+
+  <!-- SDK Preview Box -->
+  <rect x="515" y="275" width="450" height="285" rx="6" fill="#0d131f" stroke="#2d3748" stroke-width="1"/>
+  <text x="530" y="300" fill="#60a5fa" font-size="11" font-weight="bold">// React / Next.js Zero-Dependency Hook:</text>
+  <text x="530" y="325" fill="#f3f4f6" font-size="10">import { useFeatureFlag } from './useFeatureFlag';</text>
+  <text x="530" y="350" fill="#f3f4f6" font-size="10">export function CheckoutPage({ user }) {</text>
+  <text x="545" y="375" fill="#34d399" font-size="10">  const { isEnabled } = useFeatureFlag(user);</text>
+  <text x="545" y="400" fill="#f3f4f6" font-size="10">  if (isEnabled) {</text>
+  <text x="560" y="425" fill="#34d399" font-size="10">    return &lt;CheckoutV2Elements /&gt;; // 25% Canary</text>
+  <text x="545" y="450" fill="#f3f4f6" font-size="10">  }</text>
+  <text x="545" y="475" fill="#f3f4f6" font-size="10">  return &lt;LegacyCheckout /&gt;;</text>
+  <text x="530" y="500" fill="#f3f4f6" font-size="10">}</text>
+</svg>
